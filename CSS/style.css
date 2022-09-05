@@ -1,0 +1,100 @@
+/* Default Reset */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Main Container */
+section {
+  display: flex;
+  width: 100vw;
+  padding: 100px;
+  font-family: "Lucida Grande", sans-serif !important;
+  justify-content: space-around;
+  background: #f7f7ff;
+}
+
+/* First part: flex of column */
+.left {
+  display: flex;
+  align-items: center;
+  width: 50vw;
+}
+.left div h1 {
+  color: #2667ff;
+  font-size: 4rem;
+  margin: 30px 0;
+}
+
+.left div p {
+  font-size: 1.5em;
+}
+
+/* Second Part: flex of column */
+.right {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  height: 80vh;
+  justify-content: center;
+}
+
+.right form {
+  display: block;
+  padding: 10px;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.right form input[required],
+.btn {
+  width: 35vw;
+  padding: 15px 10px;
+  margin: 25px;
+  font-size: 1.5em;
+  display: block;
+  border: solid #ccc;
+  border-radius: 5px;
+}
+
+.right form input.btn {
+  background: #2667ff;
+  color: #fff;
+  border: 0;
+}
+
+.right form > p:first-of-type,
+a {
+  color: #2667ff;
+  text-align: center;
+  margin: 25px;
+  text-decoration: none;
+}
+
+form > hr {
+  margin: 25px;
+}
+
+.right form input.new-account {
+  text-align: center;
+  width: 15vw;
+  background: #379634;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  padding: 15px 10px;
+  margin: 25px;
+  font-size: 1em;
+}
+
+.right form > div:last-of-type {
+  display: flex;
+  justify-content: center;
+}
+
+.right > p:last-of-type {
+  margin: 20px;
+  text-align: center;
+}
